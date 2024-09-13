@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/1f4b816a3f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              light: "#DFDFDF",
+              secondary: "#313131",
+              para: "#717171",
+              primary: "#72E549",
+            },
+          },
+          boxShadow: {
+            "3xl": "0px -10px 50px 0px #00000026",
+            "4xl": "0px 20px 100px 0px #00000066",
+          },
+        },
+      };
+    </script>
+    <title>Power</title>
+  </head>
+  <body class="bg-white">
+    <!------- Navbar Code Start  ------->
+    <!-- mobile Nav Start -->
+
+    <nav class="navbar block lg:hidden lg:px-[7%] w-full">
+      <header class="navbar-header">
+        <!-- <img src="./assets/img/logo.svg" class="w-[30%]" alt="" /> -->
+        <a href="./index.html">
+          <svg
+            width="89"
+            height="24"
+            viewBox="0 0 192 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+              fill="#72E549"
+            />
+            <path
+              d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+              fill="#72E549"
+            />
+            <path
+              d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+              fill="#72E549"
+            />
+            <path
+              d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+              fill="#72E549"
+            />
+            <path
+              d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+              fill="#72E549"
+            />
+            <line
+              x1="0.823364"
+              y1="49.5588"
+              x2="26.1175"
+              y2="49.5588"
+              stroke="#72E549"
+              stroke-width="0.882353"
+            />
+          </svg>
+        </a>
+        <button class="navbar-burger">
+          <svg
+            class="-mt-1"
+            width="20"
+            height="12"
+            viewBox="0 0 20 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+            <rect y="5.5" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+            <rect y="11" width="20" height="0.7" rx="0.35" fill="#DFDFDF" />
+          </svg>
+        </button>
+      </header>
+      <ul
+        class="navbar-list pt-4 text-lg text-light lg:flex lg:justify-between md:pt-0 text-center justify-center gap-3 sofia-r"
+      >
+        <li class="navbar-item mt-5">
+          <a class="navbar-link block active-link" href="">About</a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >App</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Smart Home </a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Vehicle Charging</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Business</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Leaf</a
+          >
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link md:p-4 py-2 block hover:text-purple-400" href=""
+            >Team</a
+          >
+        </li>
+        <li class="navbar-item">
+          <div class="flex justify-center">
+            <a href="" class="border border-primary rounded-[14px] px-8 py-2">
+              <p class="text-sm text-primary trenda-semi">
+                Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                <i class="fa-solid fa-user text-primary"></i>
+              </p>
+            </a>
+          </div>
+        </li>
+      </ul>
+
+      <!-- <ul class="navbar-list">
+      <li class="navbar-item"><a href="#" class="navbar-link">About</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Contact</a></li>
+      <li class="navbar-item"><a href="#" class="navbar-link">Work</a></li>
+    </ul> -->
+    </nav>
+
+    <!-- mobile Nav End -->
+
+    <div class="px-[6%] pt-8 w-full">
+      <nav
+        class="hidden sticky top-0 lg:flex items-center justify-between w-full py-4 md:py-0 lg:py-4 text-lg text-black lg:relative nav-bg"
+      >
+        <!-- <div class=" absolute top-4 w-[90%] h-24 -z-10">
+    
+    </div> -->
+
+        <a href="./index.html" class="">
+          <!-- <img src="./assets/img/logo.svg" alt="" /> -->
+          <svg
+            class="w-[125px] h-[33px] 2xl:w-[144px] 2xl:h-[38px]"
+            viewBox="0 0 192 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M176.117 27.0588V0.567272H177.869V8.05525C178.978 3.74399 182.364 0 187.617 0C188.726 0 189.952 0.056728 191.412 0.510544L190.886 2.15563C189.544 1.75854 188.493 1.70181 187.617 1.70181C179.62 1.70181 178.044 10.7781 177.869 16.621V27.0588H176.117Z"
+              fill="#72E549"
+            />
+            <path
+              d="M160.823 13.7384V14.4764H136.068C136.354 21.4591 141.556 25.944 147.788 25.944C152.076 25.944 155.678 23.957 157.793 20.5508L159.28 21.4591C156.821 25.3195 152.648 27.6471 147.788 27.6471C140.299 27.6471 134.353 22.1404 134.353 13.7384C134.353 5.33639 140.299 0 147.788 0C155.335 0 160.823 5.33639 160.823 13.7384ZM147.788 1.7031C141.442 1.7031 136.525 6.07441 136.068 12.9436H159.108C158.822 6.07441 154.134 1.7031 147.788 1.7031Z"
+              fill="#72E549"
+            />
+            <path
+              d="M15.1592 0.587891C22.888 0.587891 29.0587 6.37102 29.0587 14.1386C29.0587 21.9061 22.888 27.6892 15.1592 27.6892C8.61456 27.6892 4.37615 24.2874 2.56859 20.3186V38.235H0.823364V1.09817H2.50626L2.56859 7.84515C4.37615 3.87634 8.61456 0.587891 15.1592 0.587891ZM14.9722 26.1584C21.5791 26.1584 27.1888 21.0556 27.1888 14.1386C27.1888 7.22148 21.5791 2.11872 14.9722 2.11872C7.61729 2.11872 2.56859 7.16479 2.56859 14.1386C2.56859 21.1123 7.61729 26.1584 14.9722 26.1584Z"
+              fill="#72E549"
+            />
+            <path
+              d="M55.7937 28.2349C48.2752 28.2349 41.9998 22.323 41.9998 14.4404C41.9998 6.49984 48.2752 0.587891 55.7937 0.587891C63.3123 0.587891 69.6469 6.49984 69.6469 14.4404C69.6469 22.323 63.3123 28.2349 55.7937 28.2349ZM55.7937 26.67C62.1875 26.67 67.8708 21.4536 67.8708 14.4404C67.8708 7.36924 62.1875 2.15282 55.7937 2.15282C49.4 2.15282 43.7167 7.36924 43.7167 14.4404C43.7167 21.4536 49.4 26.67 55.7937 26.67Z"
+              fill="#72E549"
+            />
+            <path
+              d="M120.213 0.530541H122L112.202 27.6471H110.703L101.942 2.71165L93.2966 27.6471H91.7981L81.9998 0.530541H83.8442L92.605 25.0533L101.193 0H102.864L111.568 24.9944L120.213 0.530541Z"
+              fill="#72E549"
+            />
+            <line
+              x1="0.823364"
+              y1="49.5588"
+              x2="26.1175"
+              y2="49.5588"
+              stroke="#72E549"
+              stroke-width="0.882353"
+            />
+          </svg>
+        </a>
+        <div
+          class="hidden w-full md:flex md:items-center justify-center md:w-auto"
+          id="menu"
+        >
+          <ul
+            class="pt-4 text-base 2xl:text-lg text-para md:flex md:items-center md:justify-between md:pt-0 text-center justify-center gap-20 xl:gap-12 2xl:gap-13 sofia-r"
+          >
+            <li>
+              <a class="block active-link" href="#">About</a>
+            </li>
+            <li>
+              <a class="block" href="">App</a>
+            </li>
+            <li>
+              <a class="block" href="">Smart Home </a>
+            </li>
+            <li>
+              <a class="block" href="">Vehicle Charging</a>
+            </li>
+            <li>
+              <a class="block" href="">Business</a>
+            </li>
+            <li>
+              <a class="block" href="">Clover</a>
+            </li>
+            <li>
+              <a class="block" href="">Team</a>
+            </li>
+          </ul>
+        </div>
+
+        <div
+          class="hidden w-full md:flex justify-center mt-5 md:mt-0 items-center md:w-auto"
+          id="menu1"
+        >
+          <div class="flex justify-center">
+            <a
+              href=""
+              class="border border-primary rounded-[30px] px-7 py-3 2xl:px-8 2xl:py-3"
+            >
+              <p class="text-sm 2xl:text-base text-primary sofia-semi">
+                Contact Us &nbsp;&nbsp; | &nbsp;&nbsp;
+                <i class="fa-solid fa-user text-primary"></i>
+              </p>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!------- Navbar Code End  ------->
+
+    <!------ Team Hero Section Code Start  ------>
+    <section class="pt-20 xl:pt-10 2xl:pt-20 px-[6%]">
+      <h1
+        class="trenda-l text-[47px] lg:text-[70px] 2xl:text-[100px] text-secondary uppercase text-center px-[5%] mt-1"
+      >
+        Our<span class="text-primary"> Team</span>
+      </h1>
+      <p
+        class="sofia-l text-center text-[16px] lg:text-[25px] 2xl:text-[36px] leading-[44px] lg:leading-[65px] 2xl:leading-[78px] text-para"
+      >
+        At Power, our success is driven by a diverse team of passionate
+        innovators, engineers, and industry experts who are dedicated to
+        revolutionizing the energy sector. Each member of our team brings unique
+        expertise
+        <span class="text-secondary">
+          and a commitment to excellence, working collaboratively to develop
+          cutting-edge solutions that lead the way in sustainable energy
+          management. We believe in fostering a culture of continuous learning,
+          creativity, and integrity, where every idea is valued,</span
+        >
+        and every challenge is met with determination. Together, we're not just
+        building technology—we're shaping the future of <br />
+        energy.
+      </p>
+    </section>
+    <!------ Team Hero Section Code End  ------>
+    <!------ Team Section Code Start  ------>
+    <section class="px-[5%] my-20">
+      <div class="">
+        <div class="flex space-x-4 items-center bg-[#E7E8E9] p-2 rounded-2xl">
+          <button
+            class="tab active bg-primary text-white px-4 py-5 rounded-xl w-full text-[24px] sofia-m"
+            onclick="showTab(1)"
+          >
+            Founders
+          </button>
+          <button
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            onclick="showTab(2)"
+          >
+            Founding Team
+          </button>
+          <button
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            onclick="showTab(3)"
+          >
+            Investors
+          </button>
+          <button
+            class="tab bg-white text-para px-4 py-5 rounded-xl w-full text-[24px] sofia-r"
+            onclick="showTab(4)"
+          >
+            Non-Executives
+          </button>
+        </div>
+
+        <div class="mt-32 px-10">
+          <div class="tab-content" id="tab-1">
+            <div>
+              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+                Alexander Owers
+              </h3>
+              <p class="text-para text-xl sofia-l ml-7">Founder</p>
+              <div class="flex items-start gap-24 mt-8">
+                <img src="./assets/img/alex.png" alt="" />
+                <div>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    Alexander is a driven and charismatic individual with a
+                    strong passion for leadership, communication, and personal
+                    growth. Currently enrolled in a MBA program, Alexander is
+                    committed to further developing his skills and knowledge to
+                    stay ahead of the curve in the ever-evolving business
+                    landscape.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                    With a strong foundation in his educational background,
+                    Alexander holds a single GCSE in mathematics and a BTEC in
+                    Automotive Engineering, demonstrating his ability to
+                    overcome obstacles and achieve his goals.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    When he's not focusing on his studies, Alexander enjoys
+                    staying active through his favourite hobbies, including
+                    running, cycling, and hitting the gym. He's also a foodie at
+                    heart and loves cooking up a storm in the kitchen. On
+                    weekends, you can find him cheering on his favourite
+                    football team or indulging in his love for comic books and
+                    superheroes.
+                  </p>
+                </div>
+              </div>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                Alexander is deeply committed to engaging with his local
+                community and making a positive impact. Alexander is always
+                looking for new opportunities to get involved and make a
+                difference
+              </p>
+              <p class="text-[26px] sofia-l text-para leading-[56px]">
+                Despite facing challenges with dyslexia and bipolar, Alexander
+                has developed a strong work ethic and a positive attitude. His
+                excellent communication skills, confident demeanor , and ability
+                to overcome obstacles have made him an asset to any team.
+              </p>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                With a professional background that includes serving as
+                Commercial Director at Alfa Power and founding a charity
+                fundraising platform and a sustainability company, Alexander has
+                demonstrated his entrepreneurial spirit and commitment to making
+                a positive impact. His dedication to personal and professional
+                development is evident in his efforts to learn Arabic and
+                Portuguese, recognizing the importance of language skills in
+                international business.
+              </p>
+              <p class="text-[26px] sofia-l text-para leading-[56px]">
+                Alexander is a dynamic and versatile individual who is always
+                looking for new challenges and opportunities to grow. He is
+                passionate about leading by example and inspiring others to do
+                the same. With his strong sense of motivation and enthusiasm,
+                Alexander is poised to make a lasting impact in his professional
+                and personal life.
+              </p>
+            </div>
+            <div class="py-32">
+              <div class="w-[43%] ml-auto">
+                <h3 class="text-secondary text-[32px] trenda-semi">
+                  Dwayne Spiteri
+                </h3>
+                <p class="text-para text-xl sofia-l">Co-founder</p>
+              </div>
+
+              <div class="flex items-start gap-24 mt-8">
+                <div>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    Dwayne Spiteri started off his career as a particle
+                    physicist 12 years ago, studying Msci Physics with Particle
+                    Physics and Cosmology from the University of Birmingham, and
+                    going on to complete PhD in Experimental Particle Physics at
+                    the University of Glasgow. After a post-doctoral role
+                    working with the ATLAS experiment, he worked alongside grid
+                    computing colleagues who support particle physics research
+                    at Glasgow and pivoted to working in the field of computing
+                    sustainability.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                    Throughout his academic career, he has applied his data
+                    analysis skills order to tackle a wide variety of complex
+                    problems and projects. Notably, he has investigated Higgs
+                    Boson decays and Top Quark jet structure at the ATLAS
+                    Experiment at CERN, characterised silicon wafer and pixel
+                    technology, designed and optimized computing farm layouts,
+                    and developed simulations to investigate operational carbon
+                    reduction measures.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    Dwayne is also interested in making sure knowledge is
+                    accessible
+                  </p>
+                </div>
+                <img src="./assets/img/dwayne.png" alt="" />
+              </div>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                to all walks of life. He often organises and participates in
+                outreach events, sharing his knowledge, passion and expertise
+                with others. In addition, for the past four years, has played a
+                pivotal role in designing, shaping, and managing the James
+                McCune Smith Scholarships at the University of Glasgow, which
+                aim to address the underrepresentation of Black British students
+                at the postgraduate level and create a vibrant and connected
+                Black academic community both on campus and wider afield.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-secondary text-[32px] trenda-semi ml-7">
+                Fabrizio Romanzini
+              </h3>
+              <p class="text-para text-xl sofia-l ml-7">Co-Founder</p>
+              <div class="flex items-start gap-24 mt-8">
+                <img src="./assets/img/fabrizio.png" alt="" />
+                <div>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    Passionate & dedicate business leader with 15 years of
+                    experience, I've had the privilege of leading multinational
+                    companies and driving profitable results through strategic
+                    restructuring, targeted training, and coaching of
+                    high-performing sales teams. As the CEO and Founder of Rinno
+                    Energy, I've had the opportunity to turn my vision into a
+                    reality and build a team that shares my passion for
+                    innovation and growth
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                    My background in engineering and my Master's degree in
+                    Strategy Business Management have given me a unique
+                    perspective on what it takes to succeed in today's
+                    fast-paced business environment. I believe that success is
+                    not just about having a deep understanding of the business,
+                    but also about being able to inspire and motivate people to
+                    work towards a common goal.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    As a lifelong learner, I'm always seeking out new knowledge
+                    and insights to stay ahead of the curve. I'm fascinated by
+                    the latest
+                  </p>
+                </div>
+              </div>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                technologies, innovations, and trends in renewable energy,
+                people management, and business innovation, and I'm passionate
+                about using this knowledge to disrupt conventional business
+                models and find new ways to drive growth and success.
+              </p>
+              <p class="text-[26px] sofia-l text-para leading-[56px]">
+                As Director at Britcham Brazil, I'm excited to bring my
+                expertise and leadership skills to the table and help drive
+                business growth and development in the region. I'm committed to
+                empowering businesses to thrive in a rapidly changing
+                environment, and I'm dedicated to delivering exceptional results
+                that exceed expectations.
+              </p>
+            </div>
+            <div class="py-32">
+              <div class="w-[43%] ml-auto">
+                <h3 class="text-secondary text-[32px] trenda-semi">
+                  LaLa Rukh
+                </h3>
+                <p class="text-para text-xl sofia-l">Co-founder</p>
+              </div>
+
+              <div class="flex items-start gap-24 mt-8">
+                <div>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    With a passion for creativity and precision, Lala Rukh is a
+                    dedicated professional graphic designer and an MPhil student
+                    in mathematics. Balancing the intricacies of visual design
+                    with the analytical rigor of advanced mathematics, Lala
+                    brings a unique blend of artistry and logical thinking to
+                    every project. Her journey in the field of graphic design is
+                    marked by a commitment to excellence and an unwavering
+                    enthusiasm for learning.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                    Lala’s expertise in graphic design is complemented by her
+                    strong academic background, which has honed her
+                    problem-solving skills and attention to detail. This
+                    combination allows her to approach design challenges with
+                    both creativity and a methodical mindset, ensuring that her
+                    work not only looks stunning but also effectively
+                    communicates the intended message.
+                  </p>
+                  <p class="text-[26px] sofia-l text-para leading-[56px]">
+                    As a graphic designer, Lala has a keen eye for aesthetics
+                    and a deep understanding of how to translate concepts into
+                    visually
+                  </p>
+                </div>
+                <img src="./assets/img/lala.png" alt="" />
+              </div>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                compelling designs. Whether working on branding, digital media,
+                or print materials, she is dedicated to creating designs that
+                resonate with audiences and meet the specific needs of her
+                clients
+              </p>
+              <p class="text-[26px] sofia-l text-para leading-[56px] my-10">
+                Lala is a dynamic and versatile individual, always eager to take
+                on new challenges and push the boundaries of her creativity. Her
+                dedication to her craft and her ability to blend artistic vision
+                with analytical precision make her an asset to any team or
+                project.
+              </p>
+            </div>
+          </div>
+          <div class="tab-content hidden" id="tab-2">Content for Tab 2</div>
+          <div class="tab-content hidden" id="tab-3">Content for Tab 3</div>
+          <div class="tab-content hidden" id="tab-4">Content for Tab 4</div>
+        </div>
+      </div>
+    </section>
+    <!------ Team Section Code End  ------>
+
+    <section class="bg-white shadow-3xl py-5 lg:py-10 relative z-10 px-[5%]">
+      <div class="flex flex-col md:flex-row items-center justify-between">
+        <p class="trenda-semi text-secondary text-[10px] md:text-sm lg:text-lg">
+          Power Global © 2024
+        </p>
+        <ul
+          class="md:px-7 mt-5 md:mt-0 2xl:px-0 flex items-center justify-between 2xl:justify-center gap-4 lg:gap-16 text-[10px] md:text-sm lg:text-xl trenda-semi text-para"
+          uppercase
+        >
+          <!-- <li></li> -->
+          <!-- <li><a href="">Purpose</a></li>
+            <li><a href="">inspiration</a></li> -->
+          <li><a href="">Partners</a></li>
+          <li><a href="">Investors</a></li>
+          <li><a href="">Privacy & Legals</a></li>
+        </ul>
+        <!-- <ul
+          class="flex px-5 md:hidden items-center justify-between text-[8px] sofia-m text-para uppercase"
+        >
+          <li><a href="">Contact</a></li>
+          <li><a href="">Investors</a></li>
+          <li><a href="">Partners</a></li>
+          <li><a href="">Privacy & Legals</a></li>
+        </ul>
+        <p  class="block md:hidden text-center text-[8px] trenda-semi text-para mt-5">Power © 2024</p> -->
+      </div>
+    </section>
+    <script>
+      function showTab(tabIndex) {
+        // Hide all tab contents
+        document.querySelectorAll(".tab-content").forEach((tab) => {
+          tab.classList.add("hidden");
+        });
+
+        // Remove active class from all tabs
+        document.querySelectorAll(".tab").forEach((tab) => {
+          tab.classList.remove("active", "bg-primary", "text-white", "sofia-m");
+          tab.classList.add("bg-white", "text-para", "sofia-r");
+        });
+
+        // Show the selected tab content
+        document.getElementById("tab-" + tabIndex).classList.remove("hidden");
+
+        // Add active class to the clicked tab
+        const activeTab = document.querySelector(
+          ".tab:nth-child(" + tabIndex + ")"
+        );
+        activeTab.classList.add(
+          "active",
+          "bg-primary",
+          "text-white",
+          "sofia-m"
+        );
+        activeTab.classList.remove("bg-white", "text-para", "sofia-r");
+      }
+
+      // Initialize the first tab as active
+      showTab(1);
+    </script>
+    <script>
+      const button = document.querySelector("#menu-button");
+      const menu = document.querySelector("#menu");
+      const menu1 = document.querySelector("#menu1");
+      button.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu1.classList.toggle("hidden");
+      });
+    </script>
+    <script>
+      const burger = document.querySelector(".navbar-burger");
+      const navbar = document.querySelector(".navbar");
+
+      burger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
+
+    <script>
+      const checkbox = document.getElementById("checkbox");
+      checkbox.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+    </script>
+  </body>
+</html>
